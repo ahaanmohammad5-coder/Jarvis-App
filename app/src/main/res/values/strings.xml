@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jarvis</string>
+    <string name="title_jarvis">JARVIS</string>
+    <string name="status_idle">Tap the reactor, then say "Hey Jarvis"</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_awake">Ji Ahaan, boliye?</string>
+    <string name="status_thinking">Soch raha hoon…</string>
+    <string name="status_speaking">Bol raha hoon…</string>
+    <string name="hint_wake">Say "Hey Jarvis" to wake me up</string>
+    <string name="perm_rationale">Jarvis needs microphone access to hear your voice commands.</string>
+    <string name="perm_denied">Microphone permission denied. Voice commands won't work.</string>
+</resources>
