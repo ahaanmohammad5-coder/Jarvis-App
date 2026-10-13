@@ -1,0 +1,78 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF00D4FF"
+        android:strokeWidth="2"
+        android:pathData="M120,8 a112,112 0 1,1 -0.1,0" />
+
+    <!-- Second ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF00D4FF"
+        android:strokeWidth="4"
+        android:strokeAlpha="0.6"
+        android:pathData="M120,24 a96,96 0 1,1 -0.1,0" />
+
+    <!-- Coil segments (10 coils) -->
+    <group>
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="36" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="72" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="108" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="144" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="180" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="216" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="252" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="288" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="324" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+
+    <!-- Inner ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF00D4FF"
+        android:strokeWidth="3"
+        android:pathData="M120,70 a50,50 0 1,1 -0.1,0" />
+
+    <!-- Core glow -->
+    <path
+        android:fillColor="#FF00D4FF"
+        android:fillAlpha="0.25"
+        android:pathData="M120,82 a38,38 0 1,1 -0.1,0" />
+
+    <!-- Core -->
+    <path
+        android:fillColor="#FFE8F9FF"
+        android:pathData="M120,96 a24,24 0 1,1 -0.1,0" />
+
+    <!-- Core highlight -->
+    <path
+        android:fillColor="#FF00D4FF"
+        android:fillAlpha="0.5"
+        android:pathData="M120,104 a16,16 0 1,1 -0.1,0" />
+
+</vector>

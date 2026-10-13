@@ -1,26 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:background="#FF000000">
+    android:background="@color/black"
+    android:padding="24dp">
 
+    <!-- Title -->
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="JARVIS"
-        android:textColor="#FF00D4FF"
+        android:text="@string/title_jarvis"
+        android:textColor="@color/jarvis_blue"
         android:textSize="42sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:letterSpacing="0.4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
 
+    <!-- Arc reactor (tap to start/stop listening) -->
+    <ImageView
+        android:id="@+id/ivReactor"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/arc_reactor"
+        android:contentDescription="Jarvis reactor - tap to toggle listening"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toTopOf="@id/tvStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <!-- Status -->
     <TextView
         android:id="@+id/tvStatus"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Tap to speak"
-        android:textColor="#FFFFFFFF"
+        android:text="@string/status_idle"
+        android:textColor="@color/jarvis_gold"
         android:textSize="18sp"
-        android:layout_marginTop="24dp" />
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/tvCaption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp" />
 
-</LinearLayout>
+    <!-- Last heard command caption -->
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_wake"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:maxLines="3"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="48dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
