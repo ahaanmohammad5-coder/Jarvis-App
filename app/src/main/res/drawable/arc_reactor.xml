@@ -22,15 +22,33 @@
     <!-- Coil segments (10 coils) -->
     <group>
         <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="36" android:pivotX="120" android:pivotY="120" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="72" android:pivotX="120" android:pivotY="120" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="108" android:pivotX="120" android:pivotY="120" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="144" android:pivotX="120" android:pivotY="120" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="180" android:pivotX="120" android:pivotY="120" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="216" android:pivotX="120" android:pivotY="120" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="252" android:pivotX="120" android:pivotY="120" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="288" android:pivotX="120" android:pivotY="120" />
-        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" android:rotation="324" android:pivotX="120" android:pivotY="120" />
+    </group>
+    <group android:rotation="36" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="72" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="108" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="144" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="180" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="216" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="252" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="288" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
+    </group>
+    <group android:rotation="324" android:pivotX="120" android:pivotY="120">
+        <path android:fillColor="#FF0A4D6E" android:pathData="M120,40 l14,0 l0,18 l-14,0 Z" />
     </group>
 
     <!-- Inner ring -->
