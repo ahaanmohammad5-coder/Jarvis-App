@@ -10,11 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Unzip project
-        run: |
-          unzip -o -q jarvis-android-app.zip
-          ls jarvis-android
-
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
@@ -35,11 +30,10 @@ jobs:
           gradle-version: '8.9'
 
       - name: Build debug APK
-        working-directory: jarvis-android
         run: gradle assembleDebug --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: jarvis-apk
-          path: jarvis-android/app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
